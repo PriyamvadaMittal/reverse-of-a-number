@@ -1,0 +1,13 @@
+inputs=int(input("Enter the number of inputs"))
+for i in range(inputs):
+    number=input("Enter the number ")
+    try:
+        numb=int(number)
+        length=len(number)
+        if(length>1):
+            rev_number=int(number[::-1])
+            print(rev_number)
+        else:
+            print("The reverse of number",number)
+    except:
+        print("Invalid Input")
