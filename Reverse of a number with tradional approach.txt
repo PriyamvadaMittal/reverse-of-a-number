@@ -1,0 +1,13 @@
+inputs=int(input("Enter the number of inputs"))
+for i in range(inputs):
+    number=input("Enter the number ")
+    try:
+        numb=int(number)
+        reverse=0
+        while(numb>0):
+            Reminder = numb %10
+            reverse = (reverse *10) + Reminder
+            numb = numb //10
+        print(reverse)
+    except:
+        print("Invalid Input")
